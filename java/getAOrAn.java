@@ -6,3 +6,4 @@ public static String getAOrAn(String nextWord) {
 	}
 	return r;
 }
+
