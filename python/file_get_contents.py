@@ -1,6 +1,10 @@
 #PYTHON 2.7.10
 import urllib2,cookielib
 
+'''
+Function that returns the source from the target url
+@param url  
+'''
 def file_get_contents(url):
     url = str(url).replace(" ", "+") # just in case, no space in url
     hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -17,4 +21,6 @@ def file_get_contents(url):
         print e.fp.read()
     return ''
 
+#example
 print file_get_contents("https://twinnation.org/API/ip.php")
+
