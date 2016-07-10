@@ -1,5 +1,4 @@
 #PYTHON 2.7.10
-
 import urllib2,cookielib
 
 def file_get_contents(url):
