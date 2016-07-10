@@ -16,6 +16,6 @@ def file_get_contents(url):
         return page.read()
     except urllib2.HTTPError, e:
         print e.fp.read()
-    return 'error'
+    return ''
 
 print file_get_contents("https://twinnation.org/API/ip.php")
