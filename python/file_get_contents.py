@@ -15,9 +15,11 @@ def file_get_contents(url):
            'Connection': 'keep-alive'}
     req = urllib2.Request(url, headers=hdr)
     try:
-        page = urllib2.urlopen(req)
+        page = urllib2.urlopen(req, timeout=10)
         return page.read()
     except urllib2.HTTPError, e:
+        print e.fp.read()
+    except urllib2.URLError, e:
         print e.fp.read()
     return ''
 
