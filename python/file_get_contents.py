@@ -19,8 +19,6 @@ def file_get_contents(url):
         return page.read()
     except urllib2.HTTPError, e:
         print e.fp.read()
-    except urllib2.URLError, e:
-        print e.fp.read()
     return ''
 
 #example
