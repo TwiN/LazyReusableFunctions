@@ -1,5 +1,5 @@
-// Assuming that element starts with opacity 1 (if not, then just
-// element.style.opacity = 1; before calling the function)
+// Assuming that element starts with opacity 0 (if not, then just
+// element.style.opacity = 0; before calling the function)
 
 function fadeIn(element, timeBeforeFadeInMs) {
     setTimeout(function() {
