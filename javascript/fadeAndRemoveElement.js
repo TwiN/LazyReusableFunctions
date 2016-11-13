@@ -6,7 +6,7 @@ function fadeAndRemove(element, elementParent) {
     setTimeout(function() {
         var fOp = 1;
         var timer = setInterval(function () {
-            if (op <= 0.1){
+            if (fOp <= 0.1){
                 clearInterval(timer);
                 elementParent.removeChild(element);
             }
