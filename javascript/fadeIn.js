@@ -1,6 +1,3 @@
-// Assuming that element starts with opacity 0 (if not, then just
-// element.style.opacity = 0; before calling the function)
-
 function fadeIn(element, timeBeforeFadeInMs) {
 	element.style.opacity = 0.1;
 	element.style.display = "block ";
