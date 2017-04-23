@@ -13,5 +13,5 @@ std::vector<std::string> explode(std::string const &str, char delim) {
 
 
 // USAGE: ex: will split variable "grille" by newlines
-std::vector<std::string> lines = explode(grille, '\n');
+// std::vector<std::string> lines = explode(grille, '\n');
 
