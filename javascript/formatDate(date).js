@@ -3,6 +3,7 @@
  * @date Date object
  */
 function formatDate(date) {
+	date = new Date(date);
 	var YYYY = date.getFullYear();
 	var MM = ((date.getMonth()+1)<10?"0":"")+""+(date.getMonth()+1);
 	var DD = ((date.getDate())<10?"0":"")+""+(date.getDate());
