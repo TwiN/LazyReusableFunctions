@@ -13,7 +13,7 @@
  * @param s  Current status (pending, validated, in progress or completed)
  */
 function createStatusBar(s) {
-	var s = s.toLowerCase().replace(' ', '');
+	var s = s.toUpperCase().replace(' ', '');
 	// delete the status bar if it already exists
 	$("#statusBarContainer").remove(); 
 	// prepend the status bar to the container
