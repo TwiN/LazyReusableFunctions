@@ -71,9 +71,10 @@ function createStatusBar(s) {
 	background-color: grey;
 }
 #statusBar div.current {
-	background-color: green;
+	font-weight: bold;
+	background-color: #009915;
 	color: white;
-	text-shadow: 0px 0px 4px #000000;
+	text-shadow: 0px 0px 1px #000000;
 }
 #status_pending { z-index: 50; left: 30px; }
 #status_validated { z-index: 49; left: 10px; }
