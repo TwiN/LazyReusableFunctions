@@ -35,6 +35,12 @@ function createStatusBar(s) {
 /////////
 
 /* status bar */
+#statusBarContainer {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	pointer-events: none; /* allow click through */
+}
 #statusBar {
 	width: 100%;
 	height: 50px;
@@ -42,14 +48,16 @@ function createStatusBar(s) {
 	font-size: 120%;
 	position: absolute;
 	margin-top: 25px;
+	user-select: none;
 }
 #statusBar>div {
+	pointer-events: auto;
 	position: relative;
 	display: inline-block;
 	background-color: #006400;
 	width: 20%;
 	height: 35px;
-	line-height: 35px;
+	line-height: 32px;
 	vertical-align: middle;
 	border-radius: 5px;
 	border-top-right-radius: 30px;
@@ -70,4 +78,4 @@ function createStatusBar(s) {
 #status_pending { z-index: 50; left: 30px; }
 #status_validated { z-index: 49; left: 10px; }
 #status_inprogress { z-index: 48; left: -10px; }
-#status_completed {	z-index: 47; left: -30px; }
+#status_completed { z-index: 47; left: -30px; }
