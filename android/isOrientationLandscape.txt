@@ -1,0 +1,3 @@
+public boolean isOrientationLandscape() {
+    return getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+}

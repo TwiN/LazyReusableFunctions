@@ -1,3 +1,3 @@
 A collection of functions that are reusable.
 
-Table of content will be added soon
+NOTE: May also contains snippets of code

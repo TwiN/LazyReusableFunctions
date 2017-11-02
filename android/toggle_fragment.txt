@@ -1,0 +1,23 @@
+FragmentManager fm = getFragmentManager();
+fm.beginTransaction()
+    .setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out)
+    .show(somefrag)
+    .commit();
+
+
+
+// OR if you are using android.support.v4.app.Fragment
+
+
+
+FragmentManager fm = getSupportFragmentManager();
+fm.beginTransaction()
+    .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
+    .show(somefrag)
+    .commit();
+
+
+
+
+and if you want to get the fragment...
+getSupportFragmentManager().findFragmentById(R.id.fragment_id_here)

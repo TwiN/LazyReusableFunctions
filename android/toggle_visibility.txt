@@ -1,0 +1,12 @@
+
+view.findViewById(...).setVisibility(View.VISIBLE);
+
+getActivity().findViewById(...).setVisibility(View.VISIBLE);
+
+
+View.VISIBLE
+View.INVISIBLE
+View.GONE
+
+
+
