@@ -17,10 +17,9 @@ import java.net.UnknownHostException;
 		InetAddress address = null;
 		try {
 			address = InetAddress.getByName(new URL(hostname).getHost());
-		} catch (UnknownHostException e) {
-			return Utils.jsonReply("ERROR", true, "MESSAGE", "Unknown host: " + e.getMessage());
-		} catch (MalformedURLException e) {
-			return Utils.jsonReply("ERROR", true, "MESSAGE", "Bad URL: " + e.getMessage());
+		} catch (Exception e) {
+            e.printStackTrace();
+			return "";
 		}
 		return address.getHostAddress();
 	}

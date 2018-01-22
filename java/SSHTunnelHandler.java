@@ -6,9 +6,9 @@ import com.jcraft.jsch.Session;
 
 public class SSHTunnelHandler {
 
-	public static final String SERVER_IP           = "35.182.247.21";
+	public static final String SERVER_IP           = "IP_ADDRESS_HERE";
 	public static final String SERVER_USERNAME     = "ubuntu";
-	public static final String SERVER_PRIVKEY_PATH = "E:\\Dropbox\\School\\CEGEP\\SESSION_7\\OUTILS_DB\\amazonkey.pem";
+	public static final String SERVER_PRIVKEY_PATH = "PATH_TO_PRIVATE_KEY (.pem)";
 	public static final int    SERVER_PORT         = 3306;
 	public static final int    LOCAL_BINDED_PORT   = 3366;
 	
